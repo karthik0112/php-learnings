@@ -1,4 +1,4 @@
 <?php
 $txt = "india";
-echo "I love $txt!";
+echo "I love $txt.!";
 ?>
