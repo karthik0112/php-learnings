@@ -1,16 +1,19 @@
 <?php
-if(isset($_GET['submitt'])){
-    echo "hello {$_GET['text']}";
-}
+   if( $_POST["name"] || $_POST["age"] ) {
+      echo "Welcome ". $_POST['name']. "<br />";
+      echo "You are ". $_POST['age']. " years old.";
+      
+      exit();
+   }
 ?>
 <html>
-<body>
-<form action="" method="GET">
-  <label for="fname">First name:</label><br>
-  <input type="text" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
-</body>
+   <body>
+   
+      <form action = "<?php $_PHP_SELF ?>" method = "POST">
+         Name: <input type = "text" name = "name" />
+         Age: <input type = "text" name = "age" />
+         <input type = "submit" />
+      </form>
+      
+   </body>
 </html>
