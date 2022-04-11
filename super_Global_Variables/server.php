@@ -10,5 +10,5 @@ echo "<br>";
 echo $_SERVER['HTTP_USER_AGENT'];
 echo "<br>";
 echo $_SERVER['SCRIPT_NAME'];
-print_r($_SERVER);
+//print_r($_SERVER);
 ?>
