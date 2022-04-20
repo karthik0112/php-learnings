@@ -1,21 +1,15 @@
-
 <?php
-namespace Html;
-include "Html.php";
-
-$table = new Table();
+include "namespace.php";
+$table = new Html\Table();
 $table->title = "My table";
 $table->numRows = 5;
-
-$row = new Row();
+$row = new Html\Table1();
 $row->numCells = 3;
 ?>
-
 <html>
 <body>
-
 <?php $table->message(); ?>
 <?php $row->message(); ?>
-
 </body>
 </html>
+
